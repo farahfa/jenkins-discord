@@ -124,7 +124,7 @@ class DiscordWebhook {
     /* Added to test things out */
     @Override
     public boolean perform(AbstractBuild build, Launcher launcher, BuildListener listener) {
-        listener.getLogger().println(this.obj.asJson());
+        listener.getLogger().println(this.obj);
     }
     /****************************/
 }
