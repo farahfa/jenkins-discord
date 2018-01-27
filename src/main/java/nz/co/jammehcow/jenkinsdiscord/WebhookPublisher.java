@@ -103,7 +103,7 @@ public class WebhookPublisher extends Notifier {
 
         try { wh.send(); }
         catch (WebhookException e) { e.printStackTrace(); }
-        listener.getLogger().println(wh);
+        /*listener.getLogger().println(wh);*/
         return true;
     }
 
