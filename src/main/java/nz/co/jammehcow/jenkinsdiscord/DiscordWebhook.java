@@ -117,4 +117,11 @@ class DiscordWebhook {
             } catch (JSONException ignored) {}
         } catch (UnirestException e) { e.printStackTrace(); }
     }
+
+    /* Added to test things out */
+    @Override
+    public boolean perform(AbstractBuild build, Launcher launcher, BuildListener listener) {
+        listener.getLogger().println(this.obj.asJson());
+    }
+    /****************************/
 }
