@@ -124,6 +124,7 @@ class DiscordWebhook {
     /* Added to test things out */
     public boolean perform(AbstractBuild build, Launcher launcher, BuildListener listener) {
         listener.getLogger().println(this.obj);
+        return true;
     }
     /****************************/
 }
