@@ -1,5 +1,8 @@
 package nz.co.jammehcow.jenkinsdiscord;
 
+import hudson.model.AbstractBuild;
+import hudson.Launcher;
+import hudson.model.BuildListener;
 import com.google.common.primitives.UnsignedInteger;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
