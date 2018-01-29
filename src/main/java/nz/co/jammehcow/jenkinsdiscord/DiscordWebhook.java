@@ -19,8 +19,8 @@ import org.json.JSONObject;
  */
 class DiscordWebhook {
     private String webhookUrl;
-    private JSONObject obj;
-    private JSONObject embed;
+    public JSONObject obj;
+    public JSONObject embed;
 
     private enum Color {
         /**
