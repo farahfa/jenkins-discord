@@ -101,7 +101,7 @@ public class WebhookPublisher extends Notifier {
 
         if (this.enableFooterInfo) wh.setFooter("Jenkins v" + build.getHudsonVersion() + ", " + getDescriptor().getDisplayName() + " v" + getDescriptor().getVersion());
         
-        wh.returnPayLoad();
+        listener.getLogger().println(wh.returnPayLoad().embed);
         try { wh.send(); }
         catch (WebhookException e) { e.printStackTrace(); }
         
