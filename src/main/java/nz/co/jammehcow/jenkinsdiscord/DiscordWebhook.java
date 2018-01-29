@@ -108,6 +108,14 @@ class DiscordWebhook {
      *
      * @throws WebhookException the webhook exception
      */
+    
+    /* Added to test things out */
+    public DiscordWebhook returnPayLoad() {
+        this.obj.put("embeds", new JSONArray().put(this.embed));
+        return this;
+    }
+    /****************************/
+    
     public void send() throws WebhookException {
         this.obj.put("embeds", new JSONArray().put(this.embed));
 
@@ -120,11 +128,4 @@ class DiscordWebhook {
             } catch (JSONException ignored) {}
         } catch (UnirestException e) { e.printStackTrace(); }
     }
-
-    /* Added to test things out */
-    public boolean perform(AbstractBuild build, Launcher launcher, BuildListener listener) {
-        listener.getLogger().println((this.obj).asJson());
-        return true;
-    }
-    /****************************/
 }
