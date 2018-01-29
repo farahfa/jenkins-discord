@@ -110,7 +110,7 @@ class DiscordWebhook {
      */
     
     /* Added to test things out */
-    public DiscordWebhook returnPayLoad() {
+    public DiscordWebhook returnPayLoad(String getPayload) {
         this.obj.put("embeds", new JSONArray().put(this.embed));
         return this;
     }
